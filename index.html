@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b55e7ad894.js" crossorigin="anonymous"></script>
+
+    <style>
+
+            body {
+                font-family: "Outfit", sans-serif;
+            }
+
+            .logo_text {
+                font-size: 24px;
+                font-weight: 600;
+
+            }
+
+            .item_text {
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .fst_section_margin_top {
+                margin-top: 112px;
+            }
+
+            .on_demand h2 {
+                font-size: 54px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-top: 15px;
+            }
+
+            .on_demand p:nth-of-type(1) {
+                font-size: 21px;
+                font-weight: 600;
+            }
+
+            .on_demand p:nth-of-type(2) {
+                font-size: 17px;
+                font-weight: 400;
+                margin-bottom: 0px;
+            }
+
+            .on_demand p:nth-of-type(3) {
+                font-size: 17px;
+                font-weight: 400;
+            }
+
+            .second_section_margin_top {
+                margin-top: 100px;
+            }
+
+            .video_editor_img {
+                border-radius: 30px;
+            }
+
+            .editor-section {
+                background-color: #A5FFCF;
+                padding: 16rem 0 2rem;
+                text-align: center;
+                position: relative;
+                margin-top: -316px;
+            }
+
+            .editor-img {
+                position: relative;
+                z-index: 2;
+                border-radius: 15px;
+                overflow: hidden;
+                background-color: #ffffff;
+                display: inline-block;
+                margin-top: 100px;
+            }
+
+            .play-button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(255, 255, 255, 0.7);
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            .play-button:before {
+                content: "";
+                display: inline-block;
+                margin-left: 5px;
+                border-style: solid;
+                border-width: 10px 0 10px 18px;
+                border-color: transparent transparent transparent #28a745;
+            }
+
+            .editor-link {
+                display: block;
+                margin-top: 70px;
+                color: #000000;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 25px;
+            }
+
+            .editor-link:hover {
+                color: #000000;
+
+            }
+
+            .what_we_do p {
+                font-size: 20px;
+            }
+
+            .what-we-do {
+                padding: 4rem 0;
+                background-color: #e4e4e4;
+            }
+
+            .what-we-do h2 {
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            .what-we-do ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .what-we-do li {
+                font-size: 16px;
+                margin-bottom: 4px;
+                position: relative;
+                padding-left: 40px;
+                line-height: 35px;
+            }
+
+            .what-we-do li::before {
+                content: attr(data-number);
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 24px;
+                font-weight: 700;
+                color: #000000;
+                background-color: #65FF9B;
+                border-radius: 20px;
+                padding: 10px;
+                height: 32px;
+                width: 32px;
+            }
+
+            .experience-badge {
+                font-size: 14px;
+                font-weight: 600;
+                position: absolute;
+                top: 74px;
+                z-index: 2;
+                left: -48px;
+            }
+
+            .image-section {
+                position: relative;
+            }
+
+            .image-section img {
+                border-radius: 15px;
+                max-width: 100%;
+            }
+
+            .what_we_do_sec {
+                border: 1px solid #000000;
+                background: #ffffff;
+                z-index: 2;
+                left: 50px;
+                position: relative;
+                opacity: 0.9;
+                border-radius: 10px;
+                padding: 30px;
+                top: 45px;
+            }
+
+            .what_we_do_symbol {
+                color: #cfcfcf;
+            }
+
+            .section_margin_top {
+                margin-top: 100px;
+            }
+
+            .what_we_do_sec h2 {
+                font-size: 48px;
+                color: #000000;
+                font-weight: 800;
+            }
+
+            .why_settle ul li {
+                position: relative;
+                padding-right: 50px;
+                list-style: none;
+                font-size: 17px;
+                font-weight: 400;
+            }
+
+            .why_settle ul li[data-number="1"]::after {
+                content: url('/Images/Group\ 32.svg');
+                position: absolute;
+                right: 10px;
+                top: -52%;
+                width: 30px;
+                height: 30px;
+            }
+
+            .why_settle ul li[data-number="2"]::after {
+                content: url('/Images/Group\ 33.svg');
+                position: absolute;
+                right: 10px;
+                top: -52%;
+                width: 30px;
+                height: 30px;
+            }
+
+            .why_settle ul li[data-number="3"]::after {
+                content: url('/Images/Group\ 34.svg');
+                position: absolute;
+                right: 10px;
+                top: -52%;
+                width: 30px;
+                height: 30px;
+            }
+
+            .why_settle_sec {
+                background-color: #a5ffcf;
+            }
+
+            .section_padding_top {
+                padding-top: 50px;
+                max-width: 1300px;
+            }
+
+            .why_settle p {
+                font-size: 22px;
+                font-weight: 500;
+                margin-top: 40px;
+            }
+
+            .inner_box {
+                border: 1px solid #000000;
+                height: 370px;
+                width: 370px;
+                position: relative;
+                right: 16px;
+                top: -15px;
+                padding: 41px;
+                font-size: 45px;
+                font-weight: 800;
+                text-align: center;
+                background-color: #42d788;
+                text-transform: uppercase;
+            }
+
+            .outter_box {
+                border: 1px solid #000000;
+                height: 420px;
+                width: 420px;
+                position: relative;
+                left: -104px;
+                top: 12px;
+                padding: 41px;
+                font-size: 48px;
+                font-weight: 800;
+                text-align: center;
+                background-color: #ffffff;
+
+            }
+
+            .outter_most {
+                border: 1px solid #000000;
+                position: relative;
+                left: 104px;
+                width: 268px;
+                top: 52px;
+                height: 448px;
+                background-color: #000000;
+            }
+
+            .why_settle_second ul li[data-number="4"]::before {
+                content: url(/Images/Group\ 35.svg);
+                position: absolute;
+                right: 0px;
+                top: -50%;
+                width: 30px;
+                height: 30px;
+                left: -101px;
+            }
+
+            .why_settle_second ul li[data-number="5"]::before {
+                content: url(/Images/Group\ 36.svg);
+                position: absolute;
+                right: 0px;
+                top: -50%;
+                width: 30px;
+                height: 30px;
+                left: -101px;
+            }
+
+            .why_settle_second ul li[data-number="6"]::before {
+                content: url(/Images/Group\ 37.svg);
+                position: absolute;
+                right: 0px;
+                top: -50%;
+                width: 30px;
+                height: 30px;
+                left: -101px;
+            }
+
+            .why_settle_second ul li {
+                position: relative;
+                padding-right: 50px;
+                list-style: none;
+                font-size: 17px;
+                font-weight: 400;
+                left: 111px;
+            }
+
+            .why_settle_second p {
+                font-size: 22px;
+                font-weight: 500;
+                margin-top: 40px;
+                position: relative;
+                left: 110px;
+            }
+
+            .why_settle ul {
+                position: relative;
+                left: -24px;
+            }
+
+            .why_settle_second ul {
+                position: relative;
+                left: 10px;
+
+            }
+
+            .signup_text {
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            .newslwtter_text {
+                font-size: 27px;
+                font-weight: 500;
+            }
+
+            .subscribe_btn {
+                background-color: #65ff9b;
+                font-size: 16px;
+                font-weight: 500;
+                color: #000000;
+            }
+
+            .text-haspc {
+                text-decoration: auto;
+            }
+
+            .mattermost_txt a {
+                text-decoration: auto;
+                color: #ffffff;
+            }
+
+            .follow_us_on {
+                margin-top: 15px;
+            }
+
+            .search_button {
+                width: 80%;
+                cursor: pointer;
+            }
+
+            .check_price_btn {
+                background-color: #ffffff;
+                color: #000000;
+                border: 1px solid #000000;
+                width: 138px;
+            }
+
+            .schedule_btn {
+                background-color: #ffffff;
+                color: #000000;
+                border: 1px solid #000000;
+                width: 168px;
+            }
+
+            .button_cs {
+                display: flex;
+                gap: 10px;
+            }
+
+            .schedule_btn:hover {
+                background-color: #42d788;
+                border: 1px solid #42d788;
+                color: #000000;
+                box-shadow: none !important;
+
+            }
+
+            .check_price_btn:hover {
+                background-color: #42d788;
+                border: 1px solid #42d788;
+                color: #000000;
+                box-shadow: none !important;
+
+            }
+
+            .item1_block_slider {
+                padding: 20px;
+                background-color: #f2f2f2;
+                border-radius: 5px;
+                text-align: center;
+                height: 278px;
+                text-align: start;
+            }
+
+            .item1_block_slider p {
+                font-size: 16px;
+                color: #333;
+                margin-bottom: 15px;
+            }
+
+            .item1_block_slider h4 {
+                font-size: 18px;
+                color: #007bff;
+                margin-bottom: 10px;
+            }
+
+            .star_img {
+                max-width: 100px;
+                margin-top: 10px;
+            }
+
+            .carousel-indicators button {
+                background-color: #007bff;
+            }
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                background-color: #007bff;
+                border-radius: 50%;
+                padding: 10px;
+            }
+            .boot_cursol{
+                padding: 98px;
+
+            }
+            .item1_block_slider p:nth-of-type(1){
+                font-size: 22px;
+                font-weight: 500;
+                margin-top: 10px;
+
+            }
+            .item1_block_slider p:nth-of-type(2){
+                font-size: 16px;
+                font-weight: 400;
+                color: #696974;
+                height: 102px;
+
+            }
+            .item1_block_slider h4{
+                font-size: 16px;
+                font-weight: 500;
+                color: #000000;
+                margin-bottom: 0px;
+
+            }
+            .item1_block_slider p:nth-of-type(3){
+                font-size: 16px;
+                font-weight: 400;
+                color: #696974;
+                margin-top: 0px;
+
+            }
+            
+        
+
+
+       
+
+
+            @media only screen and (max-width: 450px){
+            .what_we_do_sec {
+                position: initial;
+                width: 95%;
+                max-width: 100%;
+                margin-left: 9px;
+                padding: 20px;
+                margin-top: 20px;
+            }
+
+            .item1_block_slider {
+                margin-bottom: 20px;
+            }
+
+            .outter_most {
+                width: 196px;
+                left: 74px;
+                height: 274px;
+                top: 10px;
+            }
+
+            .outter_box {
+                width: 245px;
+                height: 245px;
+                left: -28px;
+            }
+
+            .inner_box {
+                width: 190px;
+                height: 190px;
+                font-size: 20px;
+                margin-top: 0px;
+                padding: 30px;
+            }
+
+            .why_settle_second ul li {
+                font-size: 15px;
+                position: initial;
+                margin-left: 51px;
+            }
+
+            .why_settle_second p {
+                position: initial;
+            }
+
+            .why_settle ul li[data-number="1"]::after {
+                right: 40px;
+                width: 8%;
+                top: -38%;
+            }
+
+            .why_settle ul li[data-number="2"]::after {
+                right: 40px;
+                width: 8%;
+                top: -38%;
+            }
+
+            .why_settle ul li[data-number="3"]::after {
+                right: 40px;
+                width: 8%;
+                top: -38%;
+            }
+
+            .on_demand h2 {
+                font-size: 31px;
+                margin-top: 0px;
+
+            }
+
+            .on_demand p:nth-of-type(1) {
+                font-size: 12px;
+            }
+
+            .on_demand p:nth-of-type(2) {
+                font-size: 12px;
+            }
+
+            .editor-section {
+                background-color: #A5FFCF;
+                text-align: center;
+                margin-top: 0px;
+                padding: 0px;
+            }
+
+            .editor-link {
+                margin-top: 5px;
+                font-size: 18px;
+            }
+
+            .editor-img {
+                margin-top: 50px;
+            }
+
+            .section_margin_top {
+                margin-top: 50px;
+            }
+
+            .what_we_do_sec h2 {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .what-we-do {
+                padding-top: 16px;
+            }
+
+            .image-section img {
+                width: 100%;
+                max-width: 100%;
+                position: initial;
+                border-radius: 0px;
+                margin-top: 20px;
+            }
+
+            .experience-badge {
+                font-size: 14px;
+                font-weight: 600;
+                position: absolute;
+                top: -59px;
+                z-index: 2;
+                left: 206px;
+                width: 30%;
+            }
+
+            .what-we-do li {
+                font-size: 15px;
+            }
+
+            .what-we-do {
+                padding: 0px;
+            }
+
+            .section_padding_top {
+                padding-top: 0px;
+                margin-top: 50px;
+            }
+
+            .why_settle ul li {
+                font-size: 18px;
+            }
+
+            .why_settle p {
+                font-size: 20px;
+            }
+
+            .why_settle_second ul li[data-number="4"]::before {
+                content: url("/Images/Group 35.svg");
+                position: absolute;
+                right: 0px;
+                top: 0%;
+                height: 30px;
+                left: -11px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .why_settle_second ul li[data-number="5"]::before {
+                content: url("/Images/Group 36.svg");
+                position: absolute;
+                right: 0px;
+                top: 37%;
+                height: 30px;
+                left: -10px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .why_settle_second ul li[data-number="6"]::before {
+                content: url("/Images/Group 37.svg");
+                position: absolute;
+                right: 0px;
+                top: 70%;
+                height: 30px;
+                left: -10px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .why_settle_second p {
+
+                font-size: 19px;
+                margin-left: 50px;
+            }
+
+            .follow_us_on {
+                margin-top: 0px;
+            }
+
+            .signup_text {
+                font-size: 19px;
+            }
+
+            .newslwtter_text {
+                font-size: 20px;
+            }
+
+            .search_icon_div {
+                display: none !important;
+            }
+
+            .button_cs {
+                display: initial;
+            }
+
+            .check_price_btn {
+                width: 100%;
+                max-width: 100%;
+                margin-top: 34px;
+            }
+
+            .schedule_btn {
+                width: 100%;
+                max-width: 100%;
+                margin-top: 20px;
+            }
+
+            .schedule_btn:hover {
+                background-color: #42d788;
+                border: 1px solid #42d788;
+                color: #000000;
+                box-shadow: none !important;
+
+            }
+
+            .check_price_btn:hover {
+                background-color: #42d788;
+                border: 1px solid #42d788;
+                color: #000000;
+                box-shadow: none !important;
+
+            }
+            .boot_cursol {
+    padding: 30px;
+}
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo_text" href="#"><img src="/Images/logo (1).png"> MATTERMOST</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active item_text" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item_text" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link item_text" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICES
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item_text" href="#" tabindex="-1" aria-disabled="true">PROJECT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item_text" href="#" tabindex="-1" aria-disabled="true">CONTACT US</a>
+                    </li>
+                </ul>
+                <div class="d-flex search_icon_div">
+                    <img src="/Images/Group 45.svg" class="img-fluid search_button">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="fst_section_margin_top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5 text-md-start text-center mb-4 mb-md-0 on_demand">
+                    <h2>On-Demand Editing Service</h2>
+                    <p>To 10x Your Creativity, Productivity, Growth</p>
+                    <p>Focus on what you do best and let us take care of your</p>
+                    <p>video editing. Because that’s what we do best!</p>
+                </div>
+                <div class="col-12 col-md-7 text-center">
+                    <img src="/Images/Img_top.png" class="img-fluid" alt="On-Demand Editing Service">
+                </div>
+            </div>
+            <div class="button_cs">
+                <button type="submit" form="connectForm" class="btn btn-primary check_price_btn">Check the
+                    Price</button>
+                <button type="submit" form="connectForm" class="btn btn-primary schedule_btn">Schedule a
+                    Callback</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="editor-img">
+                        <img src="/Images/video_editor.svg" class="img-fluid" alt="Editor Image">
+                        <div class="play-button"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-12">
+                    <div class="editor-section">
+                        <a href="#" class="editor-link">Hire An Editor Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="what-we-do section_margin_top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5 what_we_do_sec">
+                    <h2>WHAT WE DO</h2>
+                    <ul>
+                        <li data-number="1">Use industry-leading tools and software to create the most captivating
+                            videos.</li>
+                        <li data-number="2">Assign a dedicated editor that fits the editing requirement.</li>
+                        <li data-number="3">Offer project files for you to view and edit. Not that you’ll need to, but
+                            still...</li>
+                        <li data-number="4">Edit overnight to complete the first draft and deliver in 1-2 days.</li>
+                        <li data-number="5">Offer stock footage, music, and sound effects as a part of the standard
+                            package.</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-7 image-section">
+                    <img src="/Images/what_we_do.png" alt="Video Editing" class="img-fluid">
+                    <div class="experience-badge">
+                        <img src="/Images/20+_years.png" alt="20+ Years Experience" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="why_settle_sec">
+        <div class="container section_padding_top">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-4 why_settle">
+                    <ul>
+                        <p>Highest Quality</p>
+                        <li data-number="1">Never miss out on the quality! Our video editors and quality analysts ensure
+                            that your video
+                            aligns with your goals. </li>
+                        <p>Transparent Policy</p>
+                        <li data-number="2">With Editonix, we offer a transparent policy that helps you make an informed
+                            decision. So, you stay confident.</li>
+                        <p>Fast Turnaround</p>
+                        <li data-number="3">Put an end to days of waiting for your
+                            project. Our on-demand video editor service delivers the first draft within 24-48 hours!
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="outter_most">
+                        <div class="outter_box">
+                            <div class="inner_box">
+                                <p>Why Settle for Less When You Have Us??</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 why_settle_second">
+                    <ul>
+                        <p>Hassle-Free Process</p>
+                        <li data-number="4">We’ve eliminated complex procedures and formalities to make sure both
+                            parties can focus on producing the best video possible. </li>
+                        <p>Cost Effective</p>
+                        <li data-number="5">Go ahead! Compare our pricing to the other companies, and see for yourself.
+                            Our lucrative pricing is one of our USPs.</li>
+                        <p>Flawless Collaboration</p>
+                        <li data-number="6">When you hire a video editor online from us, expect top-tier collaboration
+                            with a dedicated project manager!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="reviewsCarousel" class="carousel slide boot_cursol" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="item1_block_slider">
+                                <img src="/Images/star.png" class="img-fluid star_img" alt="Aim">
+                                <p>Quick and Professional</p>
+                                <p>I availed on-demand video editing
+                                    support for my marketing firm. And I couldn't be
+                                    happier with the results! Nobody can beat their
+                                    turnaround time. </p>
+                                <h4>OLIVER ROBERTS</h4>
+                                <p>Businessman</p>
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="item1_block_slider">
+                                <img src="/Images/star.png"
+                                    class="img-fluid star_img" alt="Aim">
+                                    <p>Creative and Efficient</p>
+                                <p>I’ve been a regular consumer of their monthly video editing services for 4 months now and it’s been a truly transformative journey for my agency. </p>
+                                <h4>ELIZABETH ROSS</h4>
+                                <p>Businessman</p>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="item1_block_slider">
+                                <img src="/Images/star.png"
+                                    class="img-fluid star_img" alt="Aim">
+                                    <p>Outstanding Customer Service</p>
+                                <p>This is the best client-centric video editing service I’ve experienced. I’ve worked with many agencies and freelancers before, but the on-demand video edit from team</p>
+                                <h4>AIDEN STEWART</h4>
+                                <p>Businessman</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="item1_block_slider">
+                                <img src="/Images/star.png"
+                                    class="img-fluid star_img" alt="Aim">
+                                <p>Another review text...</p>
+                                <h4>Reviewer Name</h4>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="item1_block_slider">
+                                <img src="/Images/star.png"
+                                    class="img-fluid star_img" alt="Aim">
+                                <p>Another review text...</p>
+                                <h4>Reviewer Name</h4>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="item1_block_slider">
+                                <img src="/Images/star.png"
+                                class="img-fluid star_img" alt="Aim">
+                                <p>Another review text...</p>
+                                <h4>Reviewer Name</h4>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="footer-section bg-dark text-light pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 mb-4">
+                    <h5 class="signup_text">Signup our newsletter to get update information, news, insight or
+                        promotions.</h5>
+                </div>
+                <div class="col-lg-5 col-md-12 mb-4">
+                    <h5 class="newslwtter_text">Subscribe Newsletter</h5>
+                    <form action="#" class="d-flex">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                        <button class="btn btn-success ms-2 subscribe_btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-4 text-center text-md-start mattermost_txt">
+                    <a href="#"> <img src="/Images/logo (1).png" alt="Logo" class="img-fluid" style="max-width: 100px;">
+                        MATTERMOST</a>
+
+                </div>
+                <div class="col-md-6 mb-4 d-flex justify-content-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-light text-haspc">Home</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light text-haspc">About Us</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light text-haspc">Services</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light text-haspc">Project</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light text-haspc">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-4 text-center text-md-start mattermost_txt">
+                    <p class="text-muted mt-3">© 2024 Edionix. All Rights Reserved</p>
+                </div>
+                <div class="col-md-6 mb-4 text-center text-md-end">
+                    <div class="d-inline-block follow_us_on">
+                        <span class="me-2">Follow us on</span>
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

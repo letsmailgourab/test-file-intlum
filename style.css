@@ -200,7 +200,7 @@ body {
 }
 
 .why_settle ul li[data-number="1"]::after {
-    content: url('/Images/Group\ 32.svg');
+    content: url('Images/Group\ 32.svg');
     position: absolute;
     right: 10px;
     top: -52%;
@@ -209,7 +209,7 @@ body {
 }
 
 .why_settle ul li[data-number="2"]::after {
-    content: url('/Images/Group\ 33.svg');
+    content: url('Images/Group\ 33.svg');
     position: absolute;
     right: 10px;
     top: -52%;
@@ -218,7 +218,7 @@ body {
 }
 
 .why_settle ul li[data-number="3"]::after {
-    content: url('/Images/Group\ 34.svg');
+    content: url('Images/Group\ 34.svg');
     position: absolute;
     right: 10px;
     top: -52%;
@@ -282,7 +282,7 @@ body {
 }
 
 .why_settle_second ul li[data-number="4"]::before {
-    content: url(/Images/Group\ 35.svg);
+    content: url(Images/Group\ 35.svg);
     position: absolute;
     right: 0px;
     top: -50%;
@@ -292,7 +292,7 @@ body {
 }
 
 .why_settle_second ul li[data-number="5"]::before {
-    content: url(/Images/Group\ 36.svg);
+    content: url(Images/Group\ 36.svg);
     position: absolute;
     right: 0px;
     top: -50%;
@@ -302,7 +302,7 @@ body {
 }
 
 .why_settle_second ul li[data-number="6"]::before {
-    content: url(/Images/Group\ 37.svg);
+    content: url(Images/Group\ 37.svg);
     position: absolute;
     right: 0px;
     top: -50%;
@@ -634,7 +634,7 @@ body {
     }
 
     .why_settle_second ul li[data-number="4"]::before {
-        content: url("/Images/Group 35.svg");
+        content: url("Images/Group 35.svg");
         position: absolute;
         right: 0px;
         top: 0%;
@@ -645,7 +645,7 @@ body {
     }
 
     .why_settle_second ul li[data-number="5"]::before {
-        content: url("/Images/Group 36.svg");
+        content: url("Images/Group 36.svg");
         position: absolute;
         right: 0px;
         top: 37%;
@@ -656,7 +656,7 @@ body {
     }
 
     .why_settle_second ul li[data-number="6"]::before {
-        content: url("/Images/Group 37.svg");
+        content: url("Images/Group 37.svg");
         position: absolute;
         right: 0px;
         top: 70%;
